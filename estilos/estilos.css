@@ -184,7 +184,7 @@ footer{
 }
 #contenedor{
     flex-direction: column;
-    height: 600px;
+    height: 50px;
 }
 #publicidad, 
 #contenido{
