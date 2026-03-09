@@ -184,6 +184,7 @@ footer{
 }
 #contenedor{
     flex-direction: column;
+    height: 600px;
 }
 #publicidad, 
 #contenido{
@@ -195,4 +196,5 @@ height: 600px;
 #galeria{
     grid-template-columns: repeat(1, auto);
 }
+
 }
