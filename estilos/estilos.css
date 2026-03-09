@@ -177,6 +177,7 @@ footer{
         flex-direction: column;
         padding: 0px;
         gap: 4px;
+          width: 100%;
     }
 #Menu a{
     display: flex;
@@ -199,4 +200,5 @@ height: 300px;
 }
 
 }
+
 
