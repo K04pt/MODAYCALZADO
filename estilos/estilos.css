@@ -1,0 +1,198 @@
+/*AQUÍ SE PERSONALIZA TODAS LAS ETIQUETAS HTML DE LAS PÁGINAS*/ 
+*{
+    margin: 0;
+    padding: 0;
+}
+/*AQUÍ OCULTO EL ICONO DE HAMBURGUESA*/
+#activadordeMenu{
+    display: none;
+}
+#hamburguesa{
+    display: none;
+    font-size: 30px;
+    color: rgb(240, 144, 235);
+    /*padding: 10px;*/
+    cursor: pointer;
+}
+/*AQUÍ SE PERSONALIZA EL CUERPO, LA ETIQUETA BODY*/
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(240, 144, 235);
+}
+/*AQUÍ SE PERSONALIZA LA CABECERA DE LA PÁGINA*/
+header{
+    background-color: rgb(223, 89, 216);
+    color: aliceblue;
+    text-align: center;
+}
+/*AQUÍ SE PERSONALIZA EL MENÚ DE LA PÁGINA*/
+#Menu{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 25px;
+}
+/*AQUÍ SE PERSONALIZA LOS BOTONES*/
+#Menu a {
+    text-decoration: none;
+    background-color:rgb(240, 144, 235);
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+/*CANBIO DE COLOR DE LOS BOTONES*/
+#Menu a:hover{
+    background-color: rgb(135, 184, 216);
+    transform: translateY(-5px);
+}
+/*AQUÍ VOY A PERSONALIZAR EL CONTENEDOR*/
+#contenedor{
+    display: flex;
+    min-height: 400px;
+    height: 100vh;
+}
+/*AQUÍ PERSONALIZO PUBLICIDAD 1 Y 2*/
+#publicidad{
+    width: 20%;
+    background-color: rgb(235, 232, 234);
+    padding: 20px;
+}
+#publicidad img {
+    width: 100%;
+}
+/*AQUÍ VOY A PERSONALIZAR LA SECCIÓN DE CONTENIDO*/
+#contenido{
+    width: 50%;
+    background-color: rgb(187, 155, 176);
+    padding: 20px;
+}
+.portada img{
+    width: 100%;
+}
+/*AQUÍ PERSONALIZO EL IFRAME*/
+iframe{
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(170, 98, 145) ;
+}
+/*AQUÍ PERSONALIZO PRODUCTOS Y SERVICIOS*/
+#galeria{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    justify-content: center;
+}
+#galeria2{
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 20px;
+    justify-content: center;
+}
+.prod-serv{
+    background-color: rgb(235, 232, 234);
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.serv{
+    background-color: rgb(235, 232, 234);
+    max-width: 250px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.prod-serv img{
+    width: 100%;
+    border-radius: 5px;
+}
+.prod-serv:hover{
+    box-shadow: 0px 5px 10px rgb(145, 66, 197);
+}
+.prod-serv button{
+    background-color: rgb(128, 105, 120);
+    color: aliceblue;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    border-color: antiquewhite;
+}
+.prod-serv button:hover{
+    background-color:  rgb(170, 98, 145);
+    border: none;
+}
+/*AQUÍ VOY A PERSONALIZAR LA MISIÓN Y VISIÓN*/
+.mis-vis{
+    background-color: rgb(235, 232, 234);
+    border: 1px solid rgb(235, 232, 234);
+    width: 300px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: auto;
+    border: none;
+     box-shadow: 0px 5px 10px rgb(145, 66, 197);
+}
+/*AQUÍ PERSONALIZO CONTACTO*/
+form{
+    max-width: 400px;
+    margin: 10px;
+    text-align: left;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+button{
+    background-color: rgb(197, 64, 115);
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    font-size: 25px;
+}
+button:hover{
+    background-color: rgb(228, 198, 216);
+}
+
+/*AQUÍ PERSONLIZO EL PIE DE PÁGINA*/
+footer{
+    background-color:  rgb(245, 139, 240);
+    color: aliceblue;
+    text-align: center;
+    padding: 80px;
+}
+/*AQUÍ VOY A HACER QUE LA PÁGINA SEA RESPONSIVO CON MEDIA QUERIES*/
+@media (max-width:768px){
+    /*AQUÍ MUESTRO EL BOTON HAMBURGUESA*/
+    #hamburguesa{
+        display: block;
+    }
+    #activadordeMenu:checked+#hamburguesa+#Menu{
+        display: flex;
+    }
+    #Menu{
+        display: none;
+        flex-direction: column;
+        padding: 0px;
+        gap: 4px;
+    }
+#Menu a{
+    display: flex;
+    justify-content: center;
+}
+#contenedor{
+    flex-direction: column;
+}
+#publicidad, 
+#contenido{
+    width: 100%;
+}
+iframe {
+height: 600px;
+}
+#galeria{
+    grid-template-columns: repeat(1, auto);
+}
+}
