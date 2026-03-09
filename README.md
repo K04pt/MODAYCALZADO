@@ -1,2 +1,2 @@
-# MODAYCALZADO
-pagina web de productos de ropa y calzado
+# MODA Y CALZADO
+
