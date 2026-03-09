@@ -189,6 +189,7 @@ footer{
 #publicidad, 
 #contenido{
     width: 100%;
+
 }
 iframe {
 height: 600px;
@@ -196,5 +197,4 @@ height: 600px;
 #galeria{
     grid-template-columns: repeat(1, auto);
 }
-
 }
